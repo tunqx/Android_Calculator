@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.myapplication.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="39dp"
+        android:text="Num 1 :"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edFirstNum"
+        android:layout_marginTop="19dp"
+        android:layout_toStartOf="@+id/edFirstNum"
+        android:text="Num 2 :"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edFirstNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@+id/textView11"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/edSecondNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignStart="@+id/edFirstNum"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_below="@+id/edSecondNum"
+        android:layout_marginTop="46dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btnSub"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnAdd"
+        android:layout_alignBottom="@+id/btnAdd"
+        android:layout_centerHorizontal="true"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btnMul"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSub"
+        android:layout_alignBottom="@+id/btnSub"
+        android:layout_alignEnd="@+id/edSecondNum"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnAdd"
+        android:layout_below="@+id/btnAdd"
+        android:layout_marginTop="34dp"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/btnMod"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnDiv"
+        android:layout_alignBottom="@+id/btnDiv"
+        android:layout_alignStart="@+id/btnSub"
+        android:text="%" />
+
+    <Button
+        android:id="@+id/btnMul2"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnMod"
+        android:layout_alignBottom="@+id/btnMod"
+        android:layout_alignStart="@+id/btnMul"
+        android:text="^2" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnDiv"
+        android:layout_below="@+id/btnDiv"
+        android:layout_marginTop="65dp"
+        android:text="Result :"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_toEndOf="@+id/textView12"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnCle"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edSecondNum"
+        android:layout_below="@+id/tvRes"
+        android:layout_marginTop="11dp"
+        android:text="Clear" />
+
+</RelativeLayout>
